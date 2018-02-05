@@ -28,6 +28,36 @@
 
   </script>
 
+<!--Otra prueba para fijar el nav  -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.sticky.js"></script>
+<script>
+  $(window).load(function(){
+    $("#navi").sticky({ topSpacing: 0 });
+  });
+</script>
+  <style>
+    body {
+      height: 10000px;
+      padding: 0;
+      margin: 0;
+    }
+
+    #header {
+      background: #bada55;
+      color: white;
+      font-family: Droid Sans;
+      font-size: 18px;
+      line-height: 1.6em;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.2);
+      width:100%;
+      box-sizing:border-box;
+    }
+  </style>
+
   <!-- Para la que la barra de navegacion quede fija 
 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <style>
@@ -86,7 +116,8 @@ function posicionarMenu() {
       </li>
     </ul>
   </div>
-    <div class="menu_block">
+
+    <div class="menu_block" id="navi">
       <nav class="horizontal-nav full-width horizontalNav-notprocessed">
         <ul class="sf-menu">
           <li class="current">
